@@ -26,9 +26,30 @@ You'll need a few modules to get everything running smoothly. Install them all w
   ```bash
   npm install moment simple-git random
   ```
-4. **Create your commit script**
-- Create a JavaScript file to manage your commits.
-- Create a JSON file to store all the commit timestamp data.
+
+## Usage
+
+Run the script using Node.js (version 16+ recommended).
+
+### Draw Text
+```bash
+node index.js text "HELLO" 2024 10 5
+```
+- `text`: Mode (default)
+- `"HELLO"`: The string to draw
+- `2024`: The year
+- `10`: The starting week (0-51)
+- `5`: Density (number of commits per active square)
+
+### Draw Predefined Pattern
+```bash
+node index.js pattern heart 2024 15 10
+```
+- `pattern`: Mode
+- `heart`: Pattern name (`heart`, `smiley`)
+- `2024`: Year
+- `15`: Starting week
+- `10`: Density
 
 ## Room for Improvement
 
